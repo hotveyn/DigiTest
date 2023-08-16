@@ -22,7 +22,7 @@ import IconBack from '@/components/shared/icon/IconBack.vue'
     </div>
     <div class="header_mob container">
       <IconBack />
-      <BaseInput type="secondary" />
+      <BaseInput typeX="secondary" />
     </div>
   </header>
 </template>

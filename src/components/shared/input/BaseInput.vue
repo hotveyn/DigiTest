@@ -6,18 +6,18 @@ import BaseButton from '@/components/shared/button/BaseButton.vue'
 const text = ref('')
 withDefaults(
   defineProps<{
-    type: 'base' | 'secondary'
+    typeX: 'base' | 'secondary'
   }>(),
-  { type: 'base' }
+  { typeX: 'base' }
 )
 </script>
 
 <template>
-  <label :class="[`base-input_${type}`]" class="base-input w">
-    <span v-if="type !== 'secondary'" class="base-input__left"><slot name="left" /></span>
+  <label :class="[`base-input_${typeX}`]" class="base-input w">
+    <span v-if="typeX !== 'secondary'" class="base-input__left"><slot name="left" /></span>
     <input v-model="text" v-bind="$attrs" class="base-input__input w" />
     <IconClose v-if="text" type="grey" />
-    <template v-if="type === 'secondary'">
+    <template v-if="typeX === 'secondary'">
       <BaseButton class="base-input__button" type="base">Поиск</BaseButton>
     </template>
   </label>
