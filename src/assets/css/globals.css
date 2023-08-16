@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+}
+
+.w {
+  width: 100%;
+}
+
+.container {
+  width: min(1752px, 100%);
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.pt-sans {
+  font-family: "PT Sans", sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+/*# sourceMappingURL=globals.css.map */
